@@ -1,9 +1,11 @@
-import Link from 'next/link';
+import MainLinks from './(Links)/loadLink';
+
 
 export default function HomePage() {
 	return (
-	 <>
-       mainpage
-       </>
+	<div className={'flex mainLink'}>
+        {/* @ts-expect-error Server Component */}
+		<MainLinks/>
+	</div>	
 	);
 }

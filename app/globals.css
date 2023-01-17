@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 html {
@@ -107,11 +109,11 @@ a:link {
   border-radius: 25px;
   display: flex;
   background-color: #2e323c;
-  min-height: 80%;
   min-width: 40%;
-  max-height: 80%;
-  max-width: 40%;
+  max-width: 40%;  
+  max-height: 33%;   
   margin: 1%;
+  
 }
 
 .project:hover {
@@ -140,14 +142,14 @@ a:link {
   align-items: center;
 }
 
-
-
-
-
-
-
-
-  
-
-
+.mainLink {
+  margin-top: 7%;
+  display: flex;
+  align-items: flex-start;
+  height: 70%;
+  width: 80%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 

@@ -1,7 +1,7 @@
 import styles from './projects.module.css';
-import Link from 'next/link';
 import Script from 'next/script'
 import PocketBase from 'pocketbase';
+import Project from './Card';
 
 
 const pb = new PocketBase('http://127.0.0.1:8090/');
@@ -29,15 +29,3 @@ export default async function ProjectsLoad() {
     );
 }
 
-
-function Project({ project }: any) {
-    const { id, title, description} = project || {};
-    return(
-        <Link className={'hidden project'} href={`/projects/${id}`}>
-            <div>
-                <h2>{title}</h2>
-                <h3>{description}</h3>
-            </div>
-        </Link>
-    );
-}

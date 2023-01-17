@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-head-element */
 import Link from 'next/link';
+import { Suspense } from 'react';
 import './globals.css';
+import Loading from './Loading';
 
 
 export default function RootLayout({
@@ -30,7 +32,9 @@ export default function RootLayout({
         </nav>
         <main className='background'>
           <div className={"center"}>
-            {children}
+            <Suspense fallback={ <Loading/>}>
+              {children}
+            </Suspense>
           </div>
         </main>
       </body>

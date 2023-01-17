@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <ClientComp>
         {/* @ts-expect-error Server Component */}
-            <ProjectsLoad></ProjectsLoad>
+            <ProjectsLoad/>
         </ClientComp>
     );
   }
